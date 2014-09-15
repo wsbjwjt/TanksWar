@@ -656,6 +656,7 @@
 		07CE1FE319C6BD1600AB525D /* Tank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tank.h; sourceTree = "<group>"; };
 		07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapInfo.cpp; sourceTree = "<group>"; };
 		07CE1FE719C6BE9C00AB525D /* TileMapInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapInfo.h; sourceTree = "<group>"; };
+		07CE1FEA19C6C63600AB525D /* CommonValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonValue.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -988,6 +989,7 @@
 				07CE1FE319C6BD1600AB525D /* Tank.h */,
 				07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */,
 				07CE1FE719C6BE9C00AB525D /* TileMapInfo.h */,
+				07CE1FEA19C6C63600AB525D /* CommonValue.h */,
 			);
 			name = Classes;
 			path = ../classes;

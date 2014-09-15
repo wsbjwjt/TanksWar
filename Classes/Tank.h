@@ -22,8 +22,17 @@ public:
     ~Tank();
     
     static Tank* createTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
+    void initTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
+    void remove();
+    void move();
     
+    void setBlock(bool isBlock);
+    bool getBlock();
     
+private:
+    bool mIsBlock;
+    
+    CC_SYNTHESIZE(TileMapInfo*, mTileMapInfo, TileMapInfo);
 };
 
 
