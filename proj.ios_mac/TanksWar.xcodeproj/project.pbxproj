@@ -299,6 +299,8 @@
 		07CE1FE519C6BD1600AB525D /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CE1FE219C6BD1600AB525D /* Tank.cpp */; };
 		07CE1FE819C6BE9C00AB525D /* TileMapInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */; };
 		07CE1FE919C6BE9C00AB525D /* TileMapInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */; };
+		07CE1FED19C6C7D500AB525D /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CE1FEB19C6C7D500AB525D /* Bullet.cpp */; };
+		07CE1FEE19C6C7D500AB525D /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07CE1FEB19C6C7D500AB525D /* Bullet.cpp */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -313,7 +315,6 @@
 		1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */; };
 		1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B916D35E4900DB1158 /* CloseNormal.png */; };
 		1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */; };
-		1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -326,7 +327,6 @@
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
 		5087E75317EB910900C73F5D /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B916D35E4900DB1158 /* CloseNormal.png */; };
 		5087E75417EB910900C73F5D /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */; };
-		5087E75517EB910900C73F5D /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */; };
 		5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
 		5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */; };
 		5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -657,6 +657,8 @@
 		07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapInfo.cpp; sourceTree = "<group>"; };
 		07CE1FE719C6BE9C00AB525D /* TileMapInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapInfo.h; sourceTree = "<group>"; };
 		07CE1FEA19C6C63600AB525D /* CommonValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonValue.h; sourceTree = "<group>"; };
+		07CE1FEB19C6C7D500AB525D /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		07CE1FEC19C6C7D500AB525D /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -665,7 +667,6 @@
 		1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = ../Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		1AFAF8B916D35E4900DB1158 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
-		1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* TanksWar iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TanksWar iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -990,6 +991,8 @@
 				07CE1FE619C6BE9C00AB525D /* TileMapInfo.cpp */,
 				07CE1FE719C6BE9C00AB525D /* TileMapInfo.h */,
 				07CE1FEA19C6C63600AB525D /* CommonValue.h */,
+				07CE1FEB19C6C7D500AB525D /* Bullet.cpp */,
+				07CE1FEC19C6C7D500AB525D /* Bullet.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1153,7 +1156,6 @@
 				07CE1EB919C65B3100AB525D /* tank.tps */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
-				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -1407,7 +1409,6 @@
 				07CE1F4619C65B3100AB525D /* Round20_true.tmx in Resources */,
 				07CE1FCA19C65B3100AB525D /* speedR.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				07CE1F6A19C65B3100AB525D /* moving.wav in Resources */,
 				07CE1EC019C65B3100AB525D /* blast.tps in Resources */,
 				07CE1FAA19C65B3100AB525D /* normalD_R.png in Resources */,
@@ -1591,7 +1592,6 @@
 				07CE1F0319C65B3100AB525D /* left_press.png in Resources */,
 				07CE1F0919C65B3100AB525D /* top.png in Resources */,
 				07CE1F3919C65B3100AB525D /* Round15.tmx in Resources */,
-				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				07CE1F6B19C65B3100AB525D /* moving.wav in Resources */,
 				07CE1FB319C65B3100AB525D /* normalR.png in Resources */,
 				07CE1F0D19C65B3100AB525D /* buttom.png in Resources */,
@@ -1650,6 +1650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CE1FE819C6BE9C00AB525D /* TileMapInfo.cpp in Sources */,
+				07CE1FED19C6C7D500AB525D /* Bullet.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				07CE1FE019C6703300AB525D /* ChoiceScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -1666,6 +1667,7 @@
 			files = (
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				07CE1FE119C6703300AB525D /* ChoiceScene.cpp in Sources */,
+				07CE1FEE19C6C7D500AB525D /* Bullet.cpp in Sources */,
 				07CE1FE919C6BE9C00AB525D /* TileMapInfo.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
