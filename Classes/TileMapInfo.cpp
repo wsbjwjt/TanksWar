@@ -11,7 +11,11 @@
 
 
 TileMapInfo* TileMapInfo::createMapInfoWithFile(const char* tmxFile) {
-    return null;
+    
+    TileMapInfo* tileMapInfo = new TileMapInfo();
+    tileMapInfo->initMapInfoWithFile(tmxFile);
+    
+    return tileMapInfo;
 }
 void TileMapInfo::initMapInfoWithFile(const char* tmxFile) {
     

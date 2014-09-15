@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "ChoiceScene.h"
 
 USING_NS_CC;
 
@@ -41,6 +42,21 @@ bool HelloWorld::init()
     
     //创建游戏标题界面
     MenuItemImage *pItemPlay = MenuItemImage::create("playgameNormal.png", "playgameClose.png", this, menu_selector(HelloWorld::menuPlayGameCallback));
+    pItemPlay->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 1.0f / 4.0f));
+    pItemPlay->setScaleX(visibleSize.width / 600);
+    pItemPlay->setScaleY(visibleSize.height / 400);
+    
+    Menu *pMenuPlay = Menu::create(pItemPlay, NULL);
+    pMenuPlay->setPosition(Vec2::ZERO);
+    this->addChild(pMenuPlay, 1);
+    
+    Sprite *pSprite = Sprite::create("ScenceStart.png");
+    pSprite->setPosition(Point(visibleSize.width / 2, visibleSize.height / 2));
+    Size size = pSprite->getContentSize();
+    
+    pSprite->setScaleX(visibleSize.width / size.width);
+    pSprite->setScaleY(visibleSize.height / size.height);
+    this->addChild(pSprite, 0);
     
     return true;
 }
@@ -62,13 +78,9 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 
 void HelloWorld::menuPlayGameCallback(Ref* pSender) {
     
-    
+    Scene* pScene = ChoiceScene::scene();
+    Director::getInstance()->pushScene(pScene);
 }
-
-
-
-
-
 
 
 
