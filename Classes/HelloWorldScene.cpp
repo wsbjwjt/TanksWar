@@ -33,7 +33,7 @@ bool HelloWorld::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    MenuItemImage *pCloseItem = MenuItemImage::create("CloseNormal.png", "CloseSelected.png", this, menu_selector(HelloWorld::menuCloseCallback));
+    MenuItemImage *pCloseItem = MenuItemImage::create("CloseNormal.png", "CloseSelected.png", CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
     
     pCloseItem->setPosition(Vec2(origin.x + visibleSize.width - pCloseItem->getContentSize().width / 2,origin.y + visibleSize.height - pCloseItem->getContentSize().height / 2));
     Menu *pMenu = Menu::create(pCloseItem, NULL);
@@ -41,7 +41,7 @@ bool HelloWorld::init()
     this->addChild(pMenu, 1);
     
     //创建游戏标题界面
-    MenuItemImage *pItemPlay = MenuItemImage::create("playgameNormal.png", "playgameClose.png", this, menu_selector(HelloWorld::menuPlayGameCallback));
+    MenuItemImage *pItemPlay = MenuItemImage::create("playgameNormal.png", "playgameClose.png", CC_CALLBACK_1(HelloWorld::menuPlayGameCallback, this));
     pItemPlay->setPosition(Vec2(visibleSize.width / 2, visibleSize.height * 1.0f / 4.0f));
     pItemPlay->setScaleX(visibleSize.width / 600);
     pItemPlay->setScaleY(visibleSize.height / 400);
