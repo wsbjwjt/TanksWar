@@ -25,9 +25,18 @@ public:
     Paddle();
     ~Paddle();
     
-    virtual bool onTouchBegan(Touch *touch, Event *unused_event);
-    virtual void onTouchMoved(Touch *touch, Event *unused_event);
-    virtual void onTouchEnded(Touch *touch, Event *unused_event);
+    virtual bool onTouchBegan(Touch *touch, Event *event);
+    virtual void onTouchMoved(Touch *touch, Event *event);
+    virtual void onTouchEnded(Touch *touch, Event *event);
+    
+    virtual bool initWithTextrue(Texture2D* pTexture);
+    static Paddle* paddleWithTexture(Texture2D* pTexture);
+    Rect rect();
+    bool containTouchLocation(Touch* touch);
+    
+    virtual void onEnter();
+    virtual void onExit();
+    
 };
 
 

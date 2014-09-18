@@ -8,7 +8,8 @@
 
 #include "ChoiceScene.h"
 
-using namespace cocos2d;
+USING_NS_CC;
+
 
 ChoiceScene::ChoiceScene() :mRound(1) {
     
@@ -21,12 +22,12 @@ bool ChoiceScene::init() {
     }
     setKeypadEnabled(true);
     
-    Size winSize = Director::getInstance()->getWinSize();
+    Size szWin = Director::getInstance()->getWinSize();
     Sprite *pSprite = Sprite::create("Black.png");
-    pSprite->setPosition(Vec2(winSize.width / 2, winSize.height / 2));
+    pSprite->setPosition(Vec2(szWin.width / 2, szWin.height / 2));
     Size szSprite = pSprite->getContentSize();
-    pSprite->setScaleX(winSize.width / szSprite.width);
-    pSprite->setScaleY(winSize.height / szSprite.height);
+    pSprite->setScaleX(szWin.width / szSprite.width);
+    pSprite->setScaleY(szWin.height / szSprite.height);
     this->addChild(pSprite, 0);
     
     const char *szImgs[4] = {"paddle/btn_play.png", "paddle/btn_rewind.png", "paddle/btn_fast_forward.png", "fonts/fps_images.png"};
@@ -40,12 +41,13 @@ bool ChoiceScene::init() {
     for (int i = 0; i < 3; ++i) {
         
         float* fSetting = fSettings[i];
-        Texture2D* paddleTexture = Director::getInstance()->getTextureCache()->addImage("Black.png");
+        Texture2D* paddleTexture = TextureCache::sharedTextureCache()->addImage(szImgs[i]);
+        
         Sprite* pPaddle = Sprite::createWithTexture(paddleTexture);
         Size szBtn = pPaddle->getContentSize();
-        pPaddle->setScaleX(winSize.width / szBtn.width * fSetting[0]);
-        pPaddle->setScaleY(winSize.height / szBtn.height * fSetting[1]);
-        pPaddle->setPosition(Vec2(winSize.width * fSetting[2], winSize.height * fSetting[3]));
+        pPaddle->setScaleX(szWin.width / szBtn.width * fSetting[0]);
+        pPaddle->setScaleY(szWin.height / szBtn.height * fSetting[1]);
+        pPaddle->setPosition(Vec2(szWin.width * fSetting[2], szWin.height * fSetting[3]));
         this->addChild(pPaddle);
         
     }
@@ -57,9 +59,9 @@ bool ChoiceScene::init() {
     
     Size sz = label1->getContentSize();
     label1->setAnchorPoint(Vec2(0.5f, 0.5f));
-    label1->setScaleX(winSize.width / sz.width * fSetting[0]);
-    label1->setScaleY(winSize.height / sz.height * fSetting[1]);
-    label1->setPosition(Vec2(winSize.width * fSetting[2], winSize.height * fSetting[3]));
+    label1->setScaleX(szWin.width / sz.width * fSetting[0]);
+    label1->setScaleY(szWin.height / sz.height * fSetting[1]);
+    label1->setPosition(Vec2(szWin.width * fSetting[2], szWin.height * fSetting[3]));
     label1->setColor(color);
     this->addChild(label1, 0);
     

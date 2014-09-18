@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070C14EE19CAB5FD00EA4705 /* CityScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070C14EC19CAB5FD00EA4705 /* CityScene.cpp */; };
+		070C14EF19CAB5FD00EA4705 /* CityScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070C14EC19CAB5FD00EA4705 /* CityScene.cpp */; };
 		07173AB819C7BEED00A138CC /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07173AB619C7BEED00A138CC /* Paddle.cpp */; };
 		07173AB919C7BEED00A138CC /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07173AB619C7BEED00A138CC /* Paddle.cpp */; };
 		07CE1EBA19C65B3100AB525D /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CE1E1E19C65B3000AB525D /* Black.png */; };
@@ -509,6 +511,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070C14EC19CAB5FD00EA4705 /* CityScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CityScene.cpp; path = ../Classes/CityScene.cpp; sourceTree = "<group>"; };
+		070C14ED19CAB5FD00EA4705 /* CityScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityScene.h; path = ../Classes/CityScene.h; sourceTree = "<group>"; };
 		07173AB619C7BEED00A138CC /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Paddle.cpp; path = ../Classes/Paddle.cpp; sourceTree = "<group>"; };
 		07173AB719C7BEED00A138CC /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Paddle.h; path = ../Classes/Paddle.h; sourceTree = "<group>"; };
 		07CE1E1E19C65B3000AB525D /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
@@ -999,6 +1003,8 @@
 				07CE1FEC19C6C7D500AB525D /* Bullet.h */,
 				07173AB619C7BEED00A138CC /* Paddle.cpp */,
 				07173AB719C7BEED00A138CC /* Paddle.h */,
+				070C14EC19CAB5FD00EA4705 /* CityScene.cpp */,
+				070C14ED19CAB5FD00EA4705 /* CityScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1661,6 +1667,7 @@
 				07CE1FE019C6703300AB525D /* ChoiceScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				070C14EE19CAB5FD00EA4705 /* CityScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				07CE1FE419C6BD1600AB525D /* Tank.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
@@ -1672,6 +1679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070C14EF19CAB5FD00EA4705 /* CityScene.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				07CE1FE119C6703300AB525D /* ChoiceScene.cpp in Sources */,
 				07CE1FEE19C6C7D500AB525D /* Bullet.cpp in Sources */,

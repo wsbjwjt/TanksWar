@@ -10,6 +10,9 @@
 #define __TanksWar__ChoiceScene__
 
 #include "cocos2d.h"
+#include "Paddle.h"
+
+USING_NS_CC;
 
 class ChoiceScene : public cocos2d::Layer {
     
