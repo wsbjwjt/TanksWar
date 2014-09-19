@@ -20,6 +20,19 @@ public:
     CityScene();
     ~CityScene();
     virtual bool init();
+    virtual void onEnter();
+    virtual void update(float delta);
+    
+    static Scene *scene();
+    static Scene *scene(int round);
+    CREATE_FUNC(CityScene);
+    static CityScene *create(int round);
+    
+    CC_SYNTHESIZE(int, mRound, Round);
+    
+private:
+    Tank* mPlayTank[2];
+    
 };
 
 
