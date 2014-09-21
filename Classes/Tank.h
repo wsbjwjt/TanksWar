@@ -11,6 +11,8 @@
 
 #include "cocos2d.h"
 #include "TileMapInfo.h"
+#include "CommonValue.h"
+#include "Panel.h"
 
 USING_NS_CC;
 
@@ -20,8 +22,9 @@ public:
     Tank();
     ~Tank();
     
-    static Tank* createTankWithTankType(const char* tankTypeName);
+    static Tank* createTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
     void initTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
+    bool command(enumOrder oder);
     void remove();
     void move();
     
@@ -32,6 +35,7 @@ private:
     bool mIsBlock;
     
     CC_SYNTHESIZE(TileMapInfo*, mTileMapInfo, TileMapInfo);
+    
 };
 
 

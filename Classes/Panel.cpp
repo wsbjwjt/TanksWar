@@ -44,12 +44,6 @@ bool Panel::init() {
         paddle[i]->setScale(size.height * 4.5 / 26 / szPaddle.height);
     }
     
-    
-    
-    
-    
-    
-    
     return true;
 }
 

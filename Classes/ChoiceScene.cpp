@@ -41,7 +41,7 @@ bool ChoiceScene::init() {
     for (int i = 0; i < 3; ++i) {
         
         float* fSetting = fSettings[i];
-        Texture2D* paddleTexture = TextureCache::sharedTextureCache()->addImage(szImgs[i]);
+        Texture2D* paddleTexture = Director::getInstance()->getTextureCache()->addImage(szImgs[i]);
         
         Sprite* pPaddle = Sprite::createWithTexture(paddleTexture);
         Size szBtn = pPaddle->getContentSize();
