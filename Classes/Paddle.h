@@ -18,7 +18,7 @@ typedef enum tagPaddleState {
     kPaddleStateUngrabbed
 } PaddleState;
 
-class Paddle : Sprite {
+class Paddle : public Sprite {
     
     CC_SYNTHESIZE(PaddleState, m_state, state);
 public:

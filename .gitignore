@@ -39,3 +39,7 @@ xcschememanagement.plist
 ._.*
 xcuserdata/
 DerivedData/
+
+Classes/CityScene.h
+
+Classes/Tank.cpp

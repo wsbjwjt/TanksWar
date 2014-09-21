@@ -12,8 +12,7 @@
 #include "cocos2d.h"
 #include "TileMapInfo.h"
 
-using namespace cocos2d;
-
+USING_NS_CC;
 
 class Tank : public Sprite {
     
@@ -21,7 +20,7 @@ public:
     Tank();
     ~Tank();
     
-    static Tank* createTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
+    static Tank* createTankWithTankType(const char* tankTypeName);
     void initTankWithTankType(const char* tankTypeName, TileMapInfo* tileMapInfo);
     void remove();
     void move();
