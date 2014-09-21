@@ -19,7 +19,9 @@ class CityScene : public Layer {
 public:
     CityScene();
     ~CityScene();
+    
     virtual bool init();
+    
 };
 
 
