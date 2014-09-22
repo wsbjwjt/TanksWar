@@ -7,6 +7,9 @@
 //
 
 #include "ChoiceScene.h"
+#include "CommonValue.h"
+#include "MyPaddle.h"
+#include "CityScene.h"
 
 USING_NS_CC;
 
@@ -92,10 +95,25 @@ Scene *ChoiceScene::scene() {
 
 void ChoiceScene::touchDownAction(Ref* sender, unsigned int controlEvent) {
     
+    if (controlEvent == evt_pressA) {
+        mRound = 1 + (mRound - 1 + ROUNDS - 1) % ROUNDS;
+        update();
+    }
+    else if (controlEvent == evt_pressB) {
+        mRound = 1 + (mRound + 1 + ROUNDS - 1) % ROUNDS;
+    }
+    else if (controlEvent == evt_start) {
+        Scene* scene = CityScene::scene();
+        Director::getInstance()->replaceScene(scene);
+    }
 }
 
 void ChoiceScene::update() {
     
+    char szTemp[260];
+    LabelAtlas* label1 = (LabelAtlas* )getChildByTag(evt_text);
+    sprintf(szTemp, "%d", mRound);
+    label1->setString(szTemp);
 }
 
 
