@@ -33,6 +33,8 @@ bool CityScene::init() {
     Size mapSize = tmxTileMap->getContentSize();
     mPlayerTank[0]->setPosition(Vec2(mapSize.width / 2 - tileSize.width * 3, tileSize.height));
     
+    mLayerPanel = Panel::create();
+    addChild(mLayerPanel, 3);
     
     return true;
 }

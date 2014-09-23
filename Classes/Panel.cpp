@@ -13,25 +13,25 @@ bool Panel::init() {
     if (!Layer::init()) {
         return false;
     }
-    Texture2D* paddleTexture = TextureCache::sharedTextureCache()->addImage(RES_PADDLE_UP);
+    Texture2D* paddleTexture = Director::getInstance()->getTextureCache()->addImage(RES_PADDLE_UP);
     m_pPaddleUp = Paddle::paddleWithTexture(paddleTexture);
     
-    paddleTexture = TextureCache::sharedTextureCache()->addImage(RES_PADDLE_DOWN);
+    paddleTexture = Director::getInstance()->getTextureCache()->addImage(RES_PADDLE_DOWN);
     m_pPaddleDown = Paddle::paddleWithTexture(paddleTexture);
     
-    paddleTexture = TextureCache::sharedTextureCache()->addImage(RES_PADDLE_LEFT);
+    paddleTexture = Director::getInstance()->getTextureCache()->addImage(RES_PADDLE_LEFT);
     m_pPaddleLeft = Paddle::paddleWithTexture(paddleTexture);
     
-    paddleTexture = TextureCache::sharedTextureCache()->addImage(RES_PADDLE_RIGHT);
+    paddleTexture = Director::getInstance()->getTextureCache()->addImage(RES_PADDLE_RIGHT);
     m_pPaddleRight = Paddle::paddleWithTexture(paddleTexture);
     
-    paddleTexture = TextureCache::sharedTextureCache()->addImage(RES_PADDLE_FIRE);
+    paddleTexture = Director::getInstance()->getTextureCache()->addImage(RES_PADDLE_FIRE);
     m_pPaddleFire = Paddle::paddleWithTexture(paddleTexture);
     
     Size size = getContentSize();
     
     //set up shoubing
-    int localX[5] = {static_cast<int>(size.width*4.5f / 26), static_cast<int>(size.width*4.5f / 26), static_cast<int>(size.width*2.3f / 26), static_cast<int>(size.width*6.7f / 26), static_cast<int>(size.width*6.7 / 26)};
+    int localX[5] = {static_cast<int>(size.width*4.5f / 26), static_cast<int>(size.width*4.5f / 26), static_cast<int>(size.width*2.3f / 26), static_cast<int>(size.width*6.7f / 26), static_cast<int>(size.width*22.0f / 26)};
     int localY[5] = {static_cast<int>(size.height*6.7f / 26), static_cast<int>(size.height*2.3 / 26), static_cast<int>(size.height*4.5f / 26), static_cast<int>(size.height*4.5f / 26), static_cast<int>(size.height*5.0 / 26) };
     
     Paddle *paddle[] = {m_pPaddleUp, m_pPaddleDown, m_pPaddleLeft, m_pPaddleRight, m_pPaddleFire};

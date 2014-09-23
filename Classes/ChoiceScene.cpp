@@ -18,6 +18,18 @@ ChoiceScene::ChoiceScene() :mRound(1) {
     
 }
 
+Scene *ChoiceScene::scene() {
+    
+    Scene *scene = Scene::create();
+    ChoiceScene *layer = ChoiceScene::create();
+    if (scene && layer) {
+        
+        scene->addChild(layer);
+    }
+    return scene;
+}
+
+
 bool ChoiceScene::init() {
     
     if (!Layer::init()) {
@@ -41,17 +53,23 @@ bool ChoiceScene::init() {
         {20.0f / 480, 22.0f / 320, 280.0f / 480, 172.0f / 320}
     };
     
+    enum_evt evts[4] = {evt_start, evt_pressA, evt_pressB, evt_text};
+    
     for (int i = 0; i < 3; ++i) {
         
         float* fSetting = fSettings[i];
         Texture2D* paddleTexture = Director::getInstance()->getTextureCache()->addImage(szImgs[i]);
         
-        Sprite* pPaddle = Sprite::createWithTexture(paddleTexture);
+        //Sprite* pPaddle = Sprite::createWithTexture(paddleTexture);
+        MyPaddle* pPaddle = MyPaddle::paddleWithTexture(paddleTexture);
         Size szBtn = pPaddle->getContentSize();
         pPaddle->setScaleX(szWin.width / szBtn.width * fSetting[0]);
         pPaddle->setScaleY(szWin.height / szBtn.height * fSetting[1]);
         pPaddle->setPosition(Vec2(szWin.width * fSetting[2], szWin.height * fSetting[3]));
         this->addChild(pPaddle);
+        
+        pPaddle->setpScene(this);
+        pPaddle->setevttyp(evts[i]);
         
     }
     
@@ -66,24 +84,11 @@ bool ChoiceScene::init() {
     label1->setScaleY(szWin.height / sz.height * fSetting[1]);
     label1->setPosition(Vec2(szWin.width * fSetting[2], szWin.height * fSetting[3]));
     label1->setColor(color);
-    this->addChild(label1, 0);
+    this->addChild(label1, 0, evt_text);
     
     
     return true;
 }
-
-Scene *ChoiceScene::scene() {
-    
-    Scene *scene = Scene::create();
-    ChoiceScene *layer = ChoiceScene::create();
-    if (scene && layer) {
-        
-        scene->addChild(layer);
-    }
-    return scene;
-}
-
-
 
 //void ChoiceScene::keyBackClicked(void) {
     

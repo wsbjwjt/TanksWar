@@ -37,11 +37,14 @@ bool TileMapInfo::collisionTest(Rect rect) {
     Size mapSize = mTMXTileMap->getContentSize();
     Size tileSize = mTMXTileMap->getTileSize();
     
+    if (rect.getMinX() <= 0.1 || rect.getMaxX() >= mapSize.width || rect.getMinX() <= 0.1 || rect.getMaxY() >= mapSize.height) {
+        return true;
+    }
     
     
     
     
-    return true;
+    return false;
 }
 
 

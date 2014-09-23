@@ -79,8 +79,8 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 
 void HelloWorld::menuPlayGameCallback(Ref* pSender) {
     
-    Scene* pScene = ChoiceScene::scene();
-    //Scene* pScene = CityScene::scene();
+    //Scene* pScene = ChoiceScene::scene();
+    Scene* pScene = CityScene::scene();
     Director::getInstance()->pushScene(pScene);
 }
 
